@@ -19,10 +19,10 @@
 set -e
 
 # Required!
-export DEVICE=z2_row
+export DEVICE=z2x
 export DEVICE_COMMON=msm8996-common
 export VENDOR=zuk
 
-export DEVICE_BRINGUP_YEAR=2016
+export DEVICE_BRINGUP_YEAR=2017
 
 ./../../$VENDOR/$DEVICE_COMMON/extract-files.sh "$@"
