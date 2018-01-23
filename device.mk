@@ -38,3 +38,11 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.zuk.rc
+
+# Fix ADB
+ADDITIONAL_DEFAULT_PROPERTIES += \
+ro.secure=0 \
+ro.debuggable=1 \
+persist.sys.usb.config=mtp \
+ro.adb.secure=0
+
